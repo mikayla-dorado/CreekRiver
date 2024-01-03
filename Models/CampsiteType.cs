@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using CreekRiver.Models.DTOs;
 
 namespace CreekRiver.Models;
 
@@ -9,6 +10,11 @@ public class CampsiteType
     public string CampsiteTypeName { get; set; }
     public int MaxReservationDays { get; set; }
     public decimal FeePerNight { get; set; }
+
+    // public static implicit operator CampsiteType(CampsiteTypeDTO v)
+    // {
+    //     throw new NotImplementedException();
+    // }
 }
 
 //The [Required] code above the CampsiteTypeName is called an attribute in C#.
